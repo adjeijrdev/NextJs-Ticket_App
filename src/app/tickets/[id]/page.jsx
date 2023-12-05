@@ -19,9 +19,6 @@ export async function generateStaticParams() {
   
 
 async function getTicket(id){
-
-    await new Promise(resolve => setTimeout(resolve, 3000))
-    
     const res = await fetch('https://weak-cyan-duckling-fez.cyclic.app/'+ id, {
         next: {
             revalidate: 60
