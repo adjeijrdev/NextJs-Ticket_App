@@ -1,6 +1,9 @@
 import Link from 'next/link'
 
 async function getTickets(){
+
+    await new Promise(resolve => setTimeout(resolve, 3000))
+    
     const res = await fetch('https://weak-cyan-duckling-fez.cyclic.app/',{
         next: {
             revalidate: 0
