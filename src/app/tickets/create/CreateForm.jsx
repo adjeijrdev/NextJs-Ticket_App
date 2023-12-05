@@ -43,7 +43,7 @@ export default function CreateForm() {
         />
       </label>
       <label>
-        <span>Title:</span>
+        <span>Body:</span>
         <textarea
           required
           onChange={(e) => setBody(e.target.value)}
@@ -65,7 +65,7 @@ export default function CreateForm() {
         <span>Email:</span>
         <input
           required 
-          type="text"
+          type="email"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
         />
